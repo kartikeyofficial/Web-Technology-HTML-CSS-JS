@@ -1,0 +1,22 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+
+<email 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema instnce"
+xsi:noNamespaceSchemaLocation="XML_Schema_Defination.xsd"
+id= "email001">
+    <header>
+      <from email="rajputkartikey10@gmail.com"> Kartikey Rajput</from>
+      <to email="bhumikhushi16@gmail.com">Bhumi</to>
+      <subject> Meeting Reminder</subject>
+      <date>29/09/2025</date>
+    </header>
+    <body>
+      This Is a Reminder for our meeting scheduled tommorow at 10 AM
+    </body>
+    <attachments>
+       <attachment size="2MB">
+         <filename>Meeting_agenda.pdf</filename>
+         <filetype>Application/pdf</filetype>
+       </attachment>
+    </attachments>
+</email>

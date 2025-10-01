@@ -1,0 +1,19 @@
+
+<!ELEMENT email (header, body, attachments)>
+<!ELEMENT header (from, to, subject, date)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+
+<!ELEMENT body (#PCDATA)>
+
+<!ELEMENT attachments (attachment)>
+<!ELEMENT attachment (filename, filetype)>
+<!ELEMENT filename (#PCDATA)>
+<!ELEMENT filetype (#PCDATA)>
+
+<!ATTLIST email id CDATA #REQUIRED>
+<!ATTLIST from email CDATA #REQUIRED>
+<!ATTLIST to email CDATA #REQUIRED>
+<!ATTLIST attachment size CDATA #IMPLIED>

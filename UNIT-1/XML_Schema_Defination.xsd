@@ -1,0 +1,46 @@
+<xs:schema xmlns:sx="https://www.w3.org/2001/XML Schema">
+  <xs:element name="email">
+    <xs:complexType>
+      <xs.sequence>
+        <xs:element name="header">
+          <xs.complesType>
+            <xs.sequence>
+              <xs.element name="from">
+                <xs.simpleContent>
+                   <xs:extension base="sx.string">
+                     <xs.attribute name="email" type"xs:string"/>
+                   </xs.extension>
+                </xs:simpleContent>
+              </xs.element>
+                <xs.element name="to">
+                 <xs.simpleContent>
+                   <xs:extension base="sx.string">
+                     <xs.attribute name="email" type"xs:string"/>
+                   </xs.extension>
+                 </xs:simpleContent>
+                </xs.element>
+                <xs:element name="subject" type="xs:string"/>
+                <xs.element name="date" type="xs:date"/>
+            </xs.sequence>
+          </xs.complesType>
+        </xs.element>
+        <xs:element name="body" type="xs:string"/>
+        <xs:element name="attachments">
+          <xs:complesType>
+            <xs:sequence>
+              <xs:element name="attachment">
+                <xs:complesType>
+                   <xs:sequence>
+                      <xs:element name="filename" type="xs:string"/>
+                      <xs:element name="filetype" type="xs:string"/>
+                   </xs:sequence>
+                   <xs:attribute name="size" type="xs:string"/>
+                </xs:complesType>
+               </xs.element>
+            </xs:sequence>
+          </xs:complesType>
+        </xs:element>
+      </xs.sequence>
+    </xs.complexType>
+   </xs:element>
+</xs.schema>
