@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styleing</title>
+    <style>
+.heading{
+    color: red;
+    font-size: 50px;
+    padding: 20px ;
+    border-radius: 10px;
+    background-color: #adb24a;
+    text-align: center;
+}
+.heading:hover{
+    background-color: #63b186;
+}
+
+div{
+   align-items: center;
+   padding: 30px 700px;
+   display: flex;
+   
+   
+}
+table{
+   
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+    padding: 100px;
+    border-spacing: 20px ;
+    caption-side: top;   
+}
+tr:nth-child(even){
+    background-color: #aca8a8;
+}
+tr:nth-child(odd){
+    background-color: #b9e4e1;
+
+}
+tr:hover{
+    background-color: #577788;
+}
+th,td{
+    font-size: large;
+    border: 1px solid black;
+    width: 100px; height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px; 
+}
+caption{
+    font-size: 30px;
+    border: 1px black solid;
+    background-color: #c0e5b0;
+}
+    </style>
+</head>
+<body >
+    <h2 class="heading">[1] Working with CSS In Table.</h2>
+    <div>
+    <table>
+        <caption>Student List</caption>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td>Kumar Kartikey</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>Izazul</td>
+        </tr>
+        <tr>
+            <td>118</td>
+            <td>Rohit</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Aman Kumar</td>
+        </tr>
+    </table>
+    </div>
+    
+</body>
+</html>
