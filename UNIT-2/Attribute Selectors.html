@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        [placeholder]{
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        [placeholder="Enter The Text Here"]{
+            color: rgb(65, 116, 149);
+        }
+        [placeholder*="Your"]{
+            color: blueviolet;
+        }
+        [placeholder  ^="What"]{
+            color: rgb(45, 86, 4);
+        }
+        [placeholder $="..."]{
+            font-style: italic;
+        }
+        [placeholder ~="Class"]{
+            font-size: 50px;
+        }
+        [placeholder |= "Phone"]{
+            font-style: italic;
+            color: coral;
+            font-size: 30px;
+            
+        }
+    </style>
+</head> 
+<body>
+    <form>
+        <input type="text" placeholder="Enter The Text Here">
+        <input type="text" placeholder="Enter Your Name">
+        <input type="text" placeholder="What Is Your Name">
+        <input type="text" placeholder="Enter Class">
+        <input type="text" placeholder="Phone-No.">
+    </form>
+    
+</body>
+</html>
