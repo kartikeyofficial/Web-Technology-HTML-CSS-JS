@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators Demo</title>
+    <style>
+        body{
+            background: linear-gradient(135deg,rgb(224, 100, 229), rgb(231, 231, 41)) ;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let x=10, y=5;
+        document.write("<h1 Style='font-weight:bold; color:red;border: 4px solid black; padding:10px; width:300px;border-radius:10px'> Arithmatic Opertors:</h1>");
+        document.write("x: "+x+", Y: "+y)
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Addition</p>")
+        document.write(x+y+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Substration</p>")
+        document.write(x-y+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Multiplication</p>")
+        document.write(x*y+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Division</p>")
+        document.write(x/y+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Modulus</p>")
+        document.write(x%y+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Increment</p>")
+        document.write(x+++" Previous Value<br>"+x+" Incremented Value")
+         document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Decrement</p>")
+        document.write(x--+" Previous Value<br>"+x+" Decremented Value")
+
+        document.write("<h1 Style='font-weight:bold; color:red;border: 4px solid black; padding:10px; width:400px;border-radius:10px'> Comparison Operator:</h1>");
+        let a=10, b=20;
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Equal</p>")
+        document.write((a==b)+"<br>")
+        document.write((a==10)+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Not Equal</p>")
+        document.write((a!=b)+"<br>")
+        document.write((a!=10)+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Strictly Equal</p>")
+        document.write((a===b)+"<br>")
+        document.write((a===10)+"<br>")
+        document.write((a==='10')+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Strictly Unequal</p>")
+        document.write((a!==b)+"<br>")
+        document.write((a!==10)+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Greater Than</p>")
+        document.write((a>b)+"<br>")
+        document.write((b>a)+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Less Than</p>")
+        document.write((a<b)+"<br>")
+        document.write((b<a)+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Greater Than or Equal to</p>")
+        document.write((a>=b)+"<br>")
+        document.write((b>=a)+"<br>")
+        document.write((b>=20)+"<br>")
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Less Than or Equal to</p>")
+        document.write((a<=b)+"<br>")
+        document.write((b<=a)+"<br>")
+        document.write((b<=20)+"<br>")
+
+        document.write("<h1 Style='font-weight:bold; color:red;border: 4px solid black; padding:10px; width:300px;border-radius:10px'> Logical Operator:</h1>");
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Logical AND</p>")
+        document.write((true && true)+"<br>")
+        document.write((false && false)+"<br>")
+        document.write((true && false)+"<br>")
+        document.write((false && true)+"<br>")
+
+        document.write((0 && 7)+"<br>")
+        document.write((7 && 0)+"<br>")
+        document.write((6 && 7)+"<br>")
+        document.write((0 && 0)+"<br>")
+
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Logical OR</p>")
+        document.write((true || true)+"<br>")
+        document.write((false || false)+"<br>")
+        document.write((true || false)+"<br>")
+        document.write((false || true)+"<br>")
+
+        document.write((0 || 7)+"<br>")
+        document.write((7 || 0)+"<br>")
+        document.write((6 || 7)+"<br>")
+        document.write((0 || 0)+"<br>")
+
+        document.write("<p style='font-weight:bold;font-size:20px; text-decoration:underline;'>Logical NOT</p>")
+        document.write(!(true && true)+"<br>")
+        document.write(!(false && false)+"<br>")
+        document.write(!(true && false)+"<br>")
+        document.write(!(false && true)+"<br>")
+
+        document.write(!(0 || 7)+"<br>")
+        document.write(!(7 || 0)+"<br>")
+        document.write(!(6 || 7)+"<br>")
+        document.write(!(0 || 0)+"<br>")
+
+    </script>
+    
+    
+</body>
+</html>
