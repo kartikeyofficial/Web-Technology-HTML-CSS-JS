@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        function show(){
+            document.write("Web Technology");
+        }
+        show();
+        document.write("<br>")
+
+        function courses(course){
+            document.write(course)
+        }
+        
+        courses("DBMS");
+        document.write("<br>")
+
+        function multiply(a=10,b=5){
+            return a*b;
+        }
+        document.write(multiply());
+        document.write("<br>")
+        document.write(multiply(4,3))
+        document.write("<br>")
+        document.write(multiply(2))
+        document.write("<br>")
+
+        // Function Declaration
+        document.write(doubles(4))
+        function doubles(num){
+            return num*2;
+        }
+        // Function Expression
+        let doubleNum = function(num){
+            return num*2
+        }
+        document.write("<br>"+doubleNum(7))
+
+        // Arrow Function
+
+        let add = (a,b)=>a+b;
+        document.write("<br>"+add(2,2))
+
+        // Arrow Function Block Structure
+        let showCourse=(course)=>{
+            let message=("You Are Studying "+course)
+            return message;
+        }
+        document.write("<br>"+showCourse("DBMS"))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
